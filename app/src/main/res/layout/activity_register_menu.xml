@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="Welcome TO Automex"
+        android:textAlignment="center"
+        android:textColor="@color/grey_900"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/slogon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Register to continue"
+        android:textColor="@color/grey_900"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/registerUser"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/yellow_500"
+        android:text="Register As User"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/registerMechanic"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/yellow_500"
+        android:text="Register As Mechanic"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Already Have Account ? Sign In"
+        android:textColor="@color/grey_900"/>
+
+
+
+</LinearLayout>

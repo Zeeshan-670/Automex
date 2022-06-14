@@ -24,7 +24,7 @@
         android:text="Welcome TO Automex"
         android:textAlignment="center"
         android:textColor="@color/grey_900"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/slogon_name"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Sign In to continue"
+        android:text="Register As User"
         android:textColor="@color/grey_900"
         android:textAlignment="center"
         android:textSize="18sp" />
@@ -40,15 +40,65 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:hint="Full Name"
+        android:textColorHint="@color/grey_900"
+        app:boxStrokeColor="@color/yellow_500"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_500"/>
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/username"
         android:hint="Username"
+        android:textColorHint="@color/grey_900"
+        app:boxStrokeColor="@color/yellow_500"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow_500"/>
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:textColorHint="@color/grey_900"
+        app:boxStrokeColor="@color/yellow_500"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/yellow_500"/>
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_no"
+        android:hint="Phone No"
         android:textColorHint="@color/grey_900"
         app:boxStrokeColor="@color/yellow_500"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -77,15 +127,7 @@
             android:textColor="@color/yellow_500" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:background="#00000000"
-        android:textColor="@color/grey_900"
-        android:text="Forget Password?"
-        android:layout_gravity="right"
-        android:elevation="0dp"
-        android:layout_margin="5dp"/>
+
 
     <Button
         android:layout_width="match_parent"
@@ -97,14 +139,14 @@
         android:layout_marginBottom="5dp"/>
 
     <Button
-        android:id="@+id/register_menu"
+        android:id="@+id/signin_page"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_margin="5dp"
         android:background="#00000000"
         android:elevation="0dp"
-        android:text="New User ? Sign Up"
+        android:text="Already Have Account ? Sign In"
         android:textColor="@color/grey_900"/>
 
 

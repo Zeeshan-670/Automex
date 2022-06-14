@@ -1,6 +1,5 @@
 package com.example.automex;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,23 +9,24 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-public class Login extends AppCompatActivity {
+public class MechanicRegister extends AppCompatActivity {
 
-    Button callSignUp;
+    Button callSigninPage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_mechanic_register);
 
-        callSignUp = findViewById(R.id.register_menu);
 
-        callSignUp.setOnClickListener(new View.OnClickListener() {
+        callSigninPage = findViewById(R.id.signin_page);
+
+        callSigninPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( Login.this,RegisterMenu.class);
+                Intent intent = new Intent( MechanicRegister.this,Login.class);
                 startActivity(intent);
 
             }
