@@ -12,6 +12,8 @@ import android.widget.Button;
 public class MechanicRegister extends AppCompatActivity {
 
     Button callSigninPage;
+    Button callDashboard;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,17 @@ public class MechanicRegister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent( MechanicRegister.this,Login.class);
+                startActivity(intent);
+
+            }
+        });
+
+        callDashboard = findViewById(R.id.sign_in);
+
+        callDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( MechanicRegister.this,Dashboard.class);
                 startActivity(intent);
 
             }

@@ -13,6 +13,8 @@ import android.widget.Button;
 public class Login extends AppCompatActivity {
 
     Button callSignUp;
+    Button callDashboard;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,16 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent( Login.this,RegisterMenu.class);
+                startActivity(intent);
+
+            }
+        });
+        callDashboard = findViewById(R.id.sign_in);
+
+        callDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent( Login.this,Dashboard.class);
                 startActivity(intent);
 
             }

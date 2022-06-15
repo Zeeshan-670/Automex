@@ -13,6 +13,8 @@ public class UserRegister extends AppCompatActivity {
 
     Button callSigninPage;
 
+    Button callDashboard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +28,17 @@ public class UserRegister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent( UserRegister.this,Login.class);
+                startActivity(intent);
+
+            }
+        });
+
+        callDashboard = findViewById(R.id.sign_in);
+
+        callDashboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(UserRegister.this,Dashboard.class);
                 startActivity(intent);
 
             }
