@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "173952329337",
+    "firebase_url": "https://automex-ebe3b-default-rtdb.firebaseio.com",
+    "project_id": "automex-ebe3b",
+    "storage_bucket": "automex-ebe3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173952329337:android:384486d2e58b4a995f96a8",
+        "android_client_info": {
+          "package_name": "com.example.automex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173952329337-44kd68no561fsjrf5fdjbi5f9k7qp5tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMvPRvZH2CqHy6B3YwNFQdouQl4LE38eE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173952329337-44kd68no561fsjrf5fdjbi5f9k7qp5tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

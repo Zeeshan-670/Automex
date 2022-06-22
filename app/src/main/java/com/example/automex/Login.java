@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
         callDashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( Login.this,Dashboard.class);
+                Intent intent = new Intent( Login.this,Profile.class);
                 startActivity(intent);
 
             }
